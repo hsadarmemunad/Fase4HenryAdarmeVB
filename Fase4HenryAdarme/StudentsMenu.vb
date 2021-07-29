@@ -20,14 +20,21 @@
         Dim student As Student = dao.FirstByEmail(email)
 
         If student Is Nothing Then
-            MessageDialog.ShowWarning("Datos de usuario o contraseña in correctos")
+            MessageDialog.ShowWarning("Datos de usuario o contraseña incorrectos")
+            Return
         End If
 
         If student IsNot Nothing Then
             If String.Equals(student.Password, password) = False Then
-                MessageDialog.ShowWarning("Datos de usuario o contraseña in correctos")
+                MessageDialog.ShowWarning("Datos de usuario o contraseña incorrectos")
+                Return
             End If
         End If
+
+        Dim frm As New StudyTopics()
+        frm.Show()
+
+        Me.Hide()
 
     End Sub
 End Class

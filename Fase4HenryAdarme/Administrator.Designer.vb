@@ -24,6 +24,12 @@ Partial Class Administrator
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.IdDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CodeDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FirstNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.LastNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.EmailDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CellphoneDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.StudentsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.EstudioDataSet = New Fase4HenryAdarme.estudioDataSet()
         Me.StudentsTableAdapter = New Fase4HenryAdarme.estudioDataSetTableAdapters.studentsTableAdapter()
@@ -45,12 +51,7 @@ Partial Class Administrator
         Me.ButtonCancel = New System.Windows.Forms.Button()
         Me.ButtonSave = New System.Windows.Forms.Button()
         Me.ButtonDelete = New System.Windows.Forms.Button()
-        Me.IdDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.CodeDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.FirstNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.LastNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.EmailDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.CellphoneDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Label8 = New System.Windows.Forms.Label()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.StudentsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EstudioDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -72,6 +73,60 @@ Partial Class Administrator
         Me.DataGridView1.RowTemplate.Height = 24
         Me.DataGridView1.Size = New System.Drawing.Size(982, 352)
         Me.DataGridView1.TabIndex = 0
+        '
+        'IdDataGridViewTextBoxColumn
+        '
+        Me.IdDataGridViewTextBoxColumn.DataPropertyName = "Id"
+        Me.IdDataGridViewTextBoxColumn.HeaderText = "Id"
+        Me.IdDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.IdDataGridViewTextBoxColumn.Name = "IdDataGridViewTextBoxColumn"
+        Me.IdDataGridViewTextBoxColumn.ReadOnly = True
+        Me.IdDataGridViewTextBoxColumn.Width = 125
+        '
+        'CodeDataGridViewTextBoxColumn
+        '
+        Me.CodeDataGridViewTextBoxColumn.DataPropertyName = "code"
+        Me.CodeDataGridViewTextBoxColumn.HeaderText = "Código"
+        Me.CodeDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.CodeDataGridViewTextBoxColumn.Name = "CodeDataGridViewTextBoxColumn"
+        Me.CodeDataGridViewTextBoxColumn.ReadOnly = True
+        Me.CodeDataGridViewTextBoxColumn.Width = 125
+        '
+        'FirstNameDataGridViewTextBoxColumn
+        '
+        Me.FirstNameDataGridViewTextBoxColumn.DataPropertyName = "FirstName"
+        Me.FirstNameDataGridViewTextBoxColumn.HeaderText = "Nombres"
+        Me.FirstNameDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.FirstNameDataGridViewTextBoxColumn.Name = "FirstNameDataGridViewTextBoxColumn"
+        Me.FirstNameDataGridViewTextBoxColumn.ReadOnly = True
+        Me.FirstNameDataGridViewTextBoxColumn.Width = 125
+        '
+        'LastNameDataGridViewTextBoxColumn
+        '
+        Me.LastNameDataGridViewTextBoxColumn.DataPropertyName = "LastName"
+        Me.LastNameDataGridViewTextBoxColumn.HeaderText = "Apellidos"
+        Me.LastNameDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.LastNameDataGridViewTextBoxColumn.Name = "LastNameDataGridViewTextBoxColumn"
+        Me.LastNameDataGridViewTextBoxColumn.ReadOnly = True
+        Me.LastNameDataGridViewTextBoxColumn.Width = 125
+        '
+        'EmailDataGridViewTextBoxColumn
+        '
+        Me.EmailDataGridViewTextBoxColumn.DataPropertyName = "email"
+        Me.EmailDataGridViewTextBoxColumn.HeaderText = "Correo"
+        Me.EmailDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.EmailDataGridViewTextBoxColumn.Name = "EmailDataGridViewTextBoxColumn"
+        Me.EmailDataGridViewTextBoxColumn.ReadOnly = True
+        Me.EmailDataGridViewTextBoxColumn.Width = 125
+        '
+        'CellphoneDataGridViewTextBoxColumn
+        '
+        Me.CellphoneDataGridViewTextBoxColumn.DataPropertyName = "cellphone"
+        Me.CellphoneDataGridViewTextBoxColumn.HeaderText = "Celular"
+        Me.CellphoneDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.CellphoneDataGridViewTextBoxColumn.Name = "CellphoneDataGridViewTextBoxColumn"
+        Me.CellphoneDataGridViewTextBoxColumn.ReadOnly = True
+        Me.CellphoneDataGridViewTextBoxColumn.Width = 125
         '
         'StudentsBindingSource
         '
@@ -133,6 +188,7 @@ Partial Class Administrator
         Me.TextBoxRePassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBoxRePassword.Location = New System.Drawing.Point(691, 150)
         Me.TextBoxRePassword.Name = "TextBoxRePassword"
+        Me.TextBoxRePassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TextBoxRePassword.Size = New System.Drawing.Size(275, 27)
         Me.TextBoxRePassword.TabIndex = 7
         '
@@ -187,6 +243,7 @@ Partial Class Administrator
         Me.TextBoxPassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBoxPassword.Location = New System.Drawing.Point(691, 95)
         Me.TextBoxPassword.Name = "TextBoxPassword"
+        Me.TextBoxPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TextBoxPassword.Size = New System.Drawing.Size(275, 27)
         Me.TextBoxPassword.TabIndex = 6
         '
@@ -238,92 +295,55 @@ Partial Class Administrator
         '
         'ButtonCancel
         '
+        Me.ButtonCancel.BackColor = System.Drawing.SystemColors.Control
+        Me.ButtonCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonCancel.Location = New System.Drawing.Point(653, 279)
         Me.ButtonCancel.Name = "ButtonCancel"
         Me.ButtonCancel.Size = New System.Drawing.Size(89, 34)
         Me.ButtonCancel.TabIndex = 14
         Me.ButtonCancel.Text = "Cancelar"
-        Me.ButtonCancel.UseVisualStyleBackColor = True
+        Me.ButtonCancel.UseVisualStyleBackColor = False
         '
         'ButtonSave
         '
+        Me.ButtonSave.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.ButtonSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonSave.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonSave.Location = New System.Drawing.Point(901, 279)
         Me.ButtonSave.Name = "ButtonSave"
         Me.ButtonSave.Size = New System.Drawing.Size(89, 34)
         Me.ButtonSave.TabIndex = 13
         Me.ButtonSave.Text = "Guardar"
-        Me.ButtonSave.UseVisualStyleBackColor = True
+        Me.ButtonSave.UseVisualStyleBackColor = False
         '
         'ButtonDelete
         '
+        Me.ButtonDelete.BackColor = System.Drawing.Color.MistyRose
+        Me.ButtonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonDelete.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonDelete.Location = New System.Drawing.Point(777, 279)
         Me.ButtonDelete.Name = "ButtonDelete"
         Me.ButtonDelete.Size = New System.Drawing.Size(89, 34)
         Me.ButtonDelete.TabIndex = 15
         Me.ButtonDelete.Text = "Eliminar"
-        Me.ButtonDelete.UseVisualStyleBackColor = True
+        Me.ButtonDelete.UseVisualStyleBackColor = False
         '
-        'IdDataGridViewTextBoxColumn
+        'Label8
         '
-        Me.IdDataGridViewTextBoxColumn.DataPropertyName = "Id"
-        Me.IdDataGridViewTextBoxColumn.HeaderText = "Id"
-        Me.IdDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.IdDataGridViewTextBoxColumn.Name = "IdDataGridViewTextBoxColumn"
-        Me.IdDataGridViewTextBoxColumn.ReadOnly = True
-        Me.IdDataGridViewTextBoxColumn.Width = 125
-        '
-        'CodeDataGridViewTextBoxColumn
-        '
-        Me.CodeDataGridViewTextBoxColumn.DataPropertyName = "code"
-        Me.CodeDataGridViewTextBoxColumn.HeaderText = "Código"
-        Me.CodeDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.CodeDataGridViewTextBoxColumn.Name = "CodeDataGridViewTextBoxColumn"
-        Me.CodeDataGridViewTextBoxColumn.ReadOnly = True
-        Me.CodeDataGridViewTextBoxColumn.Width = 125
-        '
-        'FirstNameDataGridViewTextBoxColumn
-        '
-        Me.FirstNameDataGridViewTextBoxColumn.DataPropertyName = "FirstName"
-        Me.FirstNameDataGridViewTextBoxColumn.HeaderText = "Nombres"
-        Me.FirstNameDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.FirstNameDataGridViewTextBoxColumn.Name = "FirstNameDataGridViewTextBoxColumn"
-        Me.FirstNameDataGridViewTextBoxColumn.ReadOnly = True
-        Me.FirstNameDataGridViewTextBoxColumn.Width = 125
-        '
-        'LastNameDataGridViewTextBoxColumn
-        '
-        Me.LastNameDataGridViewTextBoxColumn.DataPropertyName = "LastName"
-        Me.LastNameDataGridViewTextBoxColumn.HeaderText = "Apellidos"
-        Me.LastNameDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.LastNameDataGridViewTextBoxColumn.Name = "LastNameDataGridViewTextBoxColumn"
-        Me.LastNameDataGridViewTextBoxColumn.ReadOnly = True
-        Me.LastNameDataGridViewTextBoxColumn.Width = 125
-        '
-        'EmailDataGridViewTextBoxColumn
-        '
-        Me.EmailDataGridViewTextBoxColumn.DataPropertyName = "email"
-        Me.EmailDataGridViewTextBoxColumn.HeaderText = "Correo"
-        Me.EmailDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.EmailDataGridViewTextBoxColumn.Name = "EmailDataGridViewTextBoxColumn"
-        Me.EmailDataGridViewTextBoxColumn.ReadOnly = True
-        Me.EmailDataGridViewTextBoxColumn.Width = 125
-        '
-        'CellphoneDataGridViewTextBoxColumn
-        '
-        Me.CellphoneDataGridViewTextBoxColumn.DataPropertyName = "cellphone"
-        Me.CellphoneDataGridViewTextBoxColumn.HeaderText = "Celular"
-        Me.CellphoneDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.CellphoneDataGridViewTextBoxColumn.Name = "CellphoneDataGridViewTextBoxColumn"
-        Me.CellphoneDataGridViewTextBoxColumn.ReadOnly = True
-        Me.CellphoneDataGridViewTextBoxColumn.Width = 125
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(13, 321)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(514, 17)
+        Me.Label8.TabIndex = 16
+        Me.Label8.Text = "Para eliminar seleccione haga clic primero sobre un código o nombre de la tabla"
         '
         'Administrator
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.ClientSize = New System.Drawing.Size(1006, 721)
+        Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.ButtonDelete)
         Me.Controls.Add(Me.ButtonCancel)
         Me.Controls.Add(Me.ButtonSave)
@@ -338,6 +358,7 @@ Partial Class Administrator
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -369,4 +390,5 @@ Partial Class Administrator
     Friend WithEvents LastNameDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents EmailDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents CellphoneDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents Label8 As Label
 End Class

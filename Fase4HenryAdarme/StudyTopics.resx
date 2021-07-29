@@ -117,19 +117,33 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="StudentsBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>177, 17</value>
-  </metadata>
-  <metadata name="StudentsBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>177, 17</value>
-  </metadata>
-  <metadata name="EstudioDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="EstudioDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="StudentsTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>392, 17</value>
-  </metadata>
+  <data name="Label17.Text" xml:space="preserve">
+    <value>Significa que la información no haya sido alterada inapropiadamente En seguridad informática, además de las características anteriores, es
+necesario cuidar ciertos aspectos como el control de acceso y la autenticación, aunque éstos podrían incluirse en la característica de apego
+a estándares.</value>
+  </data>
+  <data name="Label13.Text" xml:space="preserve">
+    <value>Significa que la información que se recibe sea precisa y este completa (su contenido es el necesario) para los fines que se persiguen con su
+procesamiento, así como con su validez, de acuerdo con los valores y las expectativas del negocio.</value>
+  </data>
+  <data name="Label12.Text" xml:space="preserve">
+    <value>Se refiere a que, en todas las etapas del procesamiento de la información, esta se encuentre protegida contra accesos no autorizados, los cuales
+pueden derivar en la alteración o robo de información confidencial.</value>
+  </data>
+  <data name="Label6.Text" xml:space="preserve">
+    <value>Se trata de lograr que la información sea en realidad la necesaria para desarrollar cualquiera de las tareas que se desarrollan en la empresa u
+organización y sea adecuada para realizar los procesos del negocio, proporcionándola de manera oportuna, correcta, consistente y accesible.</value>
+  </data>
+  <data name="Label5.Text" xml:space="preserve">
+    <value>Muchos investigadores y autores especializados en el tema de la seguridad informática por lo común se centran sólo en las tres características de la
+información mencionadas; no obstante, de acuerdo con el marco de gestión y de negocio global para el gobierno y la gestión de las TI
+(Tecnología informática) de la empresa (COBIT por sus siglas en inglés), las características que debe poseer la información son: efectividad,
+eficiencia, confidencialidad, integridad, disponibilidad, apego a los estándares y confiabilidad, cada una de las cuales se describe
+a continuación:</value>
+  </data>
+  <data name="Label1.Text" xml:space="preserve">
+    <value>La seguridad informatica es la disciplina que con base en políticas y normas internas y externas de la empresa, se encarga de proteger
+la integridad y privacidad de la información que se encuentra almacenada en un sistema informático, contra cualquier tipo de amenazas,
+minimie zando los riesgos tanto físicos como lógicos, a los que está expuesta.</value>
+  </data>
 </root>

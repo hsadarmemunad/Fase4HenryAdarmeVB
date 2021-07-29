@@ -88,6 +88,7 @@ Partial Class StudentRegister
         Me.TextBoxRePassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBoxRePassword.Location = New System.Drawing.Point(133, 365)
         Me.TextBoxRePassword.Name = "TextBoxRePassword"
+        Me.TextBoxRePassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TextBoxRePassword.Size = New System.Drawing.Size(216, 27)
         Me.TextBoxRePassword.TabIndex = 7
         '
@@ -142,6 +143,7 @@ Partial Class StudentRegister
         Me.TextBoxPassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBoxPassword.Location = New System.Drawing.Point(133, 310)
         Me.TextBoxPassword.Name = "TextBoxPassword"
+        Me.TextBoxPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TextBoxPassword.Size = New System.Drawing.Size(216, 27)
         Me.TextBoxPassword.TabIndex = 6
         '
@@ -193,27 +195,32 @@ Partial Class StudentRegister
         '
         'ButtonSave
         '
+        Me.ButtonSave.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.ButtonSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonSave.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonSave.Location = New System.Drawing.Point(476, 567)
         Me.ButtonSave.Name = "ButtonSave"
         Me.ButtonSave.Size = New System.Drawing.Size(89, 34)
         Me.ButtonSave.TabIndex = 1
         Me.ButtonSave.Text = "Guardar"
-        Me.ButtonSave.UseVisualStyleBackColor = True
+        Me.ButtonSave.UseVisualStyleBackColor = False
         '
         'ButtonCancel
         '
+        Me.ButtonCancel.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.ButtonCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonCancel.Location = New System.Drawing.Point(354, 567)
         Me.ButtonCancel.Name = "ButtonCancel"
         Me.ButtonCancel.Size = New System.Drawing.Size(89, 34)
         Me.ButtonCancel.TabIndex = 2
         Me.ButtonCancel.Text = "Cancelar"
-        Me.ButtonCancel.UseVisualStyleBackColor = True
+        Me.ButtonCancel.UseVisualStyleBackColor = False
         '
         'StudentRegister
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.ClientSize = New System.Drawing.Size(632, 633)
         Me.Controls.Add(Me.ButtonCancel)
         Me.Controls.Add(Me.ButtonSave)

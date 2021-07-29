@@ -138,6 +138,12 @@
     <Compile Include="StudentsMenu.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="StudyTopics.Designer.vb">
+      <DependentUpon>StudyTopics.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StudyTopics.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Administrator.resx">
@@ -157,6 +163,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="StudentsMenu.resx">
       <DependentUpon>StudentsMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudyTopics.resx">
+      <DependentUpon>StudyTopics.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

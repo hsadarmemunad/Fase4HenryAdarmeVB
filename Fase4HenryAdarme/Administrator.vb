@@ -8,12 +8,19 @@
     End Sub
 
     Private Sub Save()
+
+        If CheckRepassword() <> True Then
+            MessageDialog.ShowWarning("Las contraseñas no coinciden")
+            Return
+        End If
+
         If Me.obj IsNot Nothing AndAlso Me.obj.Id > 0 Then
             Me.UpdateStudent()
         Else
             Me.Create()
         End If
 
+        ClearForm()
         Me.StudentsTableAdapter.Fill(Me.EstudioDataSet.students)
     End Sub
 
@@ -57,6 +64,18 @@
         End If
     End Sub
 
+    Private Sub ClearForm()
+        TextBoxCode.Text = ""
+        TextBoxFirstName.Text = ""
+        TextBoxLastName.Text = ""
+        TextBoxEmail.Text = ""
+        TextBoxCellphone.Text = ""
+        TextBoxPassword.Text = ""
+        TextBoxRePassword.Text = ""
+
+        Me.obj = Nothing
+    End Sub
+
     Private Sub ButtonSave_Click(sender As Object, e As EventArgs) Handles ButtonSave.Click
         Me.Save()
     End Sub
@@ -83,9 +102,22 @@
         If Application.OpenForms.Count = 1 Then
             Application.Exit()
         End If
+
+        Form1.Show()
     End Sub
 
     Private Sub ButtonDelete_Click(sender As Object, e As EventArgs) Handles ButtonDelete.Click
         DeleteStudent()
+    End Sub
+
+    Private Function CheckRepassword()
+        Dim password As String = TextBoxPassword.Text
+        Dim rePassword As String = TextBoxRePassword.Text
+
+        Return password.Equals(rePassword)
+    End Function
+
+    Private Sub ButtonCancel_Click(sender As Object, e As EventArgs) Handles ButtonCancel.Click
+        ClearForm()
     End Sub
 End Class
