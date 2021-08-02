@@ -14,4 +14,16 @@
 
         Form1.Show()
     End Sub
+
+    Private Sub ButtonEvaluate_Click(sender As Object, e As EventArgs) Handles ButtonEvaluate.Click
+        Dim dialogResult As DialogResult
+
+        dialogResult = MessageBox.Show("Tiene 3 minutos para presentar la prueba ¿Desea Iniciar?", "Advertencia",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation)
+
+        If dialogResult = DialogResult.Yes Then
+            Quiz.Show()
+            Me.Hide()
+        End If
+    End Sub
 End Class

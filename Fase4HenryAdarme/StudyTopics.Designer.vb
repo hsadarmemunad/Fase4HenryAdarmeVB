@@ -22,6 +22,7 @@ Partial Class StudyTopics
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(StudyTopics))
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
@@ -49,9 +50,14 @@ Partial Class StudyTopics
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
         Me.TabPage5 = New System.Windows.Forms.TabPage()
+        Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
+        Me.ButtonEvaluate = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Label19 = New System.Windows.Forms.Label()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TabControl1
@@ -81,6 +87,9 @@ Partial Class StudyTopics
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.Label19)
+        Me.Panel1.Controls.Add(Me.ButtonEvaluate)
+        Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.WebBrowser1)
         Me.Panel1.Controls.Add(Me.Label17)
         Me.Panel1.Controls.Add(Me.Label18)
@@ -100,23 +109,23 @@ Partial Class StudyTopics
         Me.Panel1.Controls.Add(Me.Label3)
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Location = New System.Drawing.Point(3, 3)
+        Me.Panel1.Location = New System.Drawing.Point(6, 6)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(967, 1354)
+        Me.Panel1.Size = New System.Drawing.Size(967, 2236)
         Me.Panel1.TabIndex = 0
         '
         'WebBrowser1
         '
-        Me.WebBrowser1.Location = New System.Drawing.Point(27, 889)
+        Me.WebBrowser1.Location = New System.Drawing.Point(193, 1338)
         Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
         Me.WebBrowser1.Name = "WebBrowser1"
-        Me.WebBrowser1.Size = New System.Drawing.Size(918, 434)
+        Me.WebBrowser1.Size = New System.Drawing.Size(657, 434)
         Me.WebBrowser1.TabIndex = 32
         '
         'Label17
         '
         Me.Label17.AutoSize = True
-        Me.Label17.Location = New System.Drawing.Point(16, 778)
+        Me.Label17.Location = New System.Drawing.Point(16, 1263)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(892, 51)
         Me.Label17.TabIndex = 31
@@ -126,7 +135,7 @@ Partial Class StudyTopics
         '
         Me.Label18.AutoSize = True
         Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.Location = New System.Drawing.Point(13, 749)
+        Me.Label18.Location = New System.Drawing.Point(13, 1234)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(121, 17)
         Me.Label18.TabIndex = 30
@@ -135,7 +144,7 @@ Partial Class StudyTopics
         'Label15
         '
         Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(16, 688)
+        Me.Label15.Location = New System.Drawing.Point(16, 1173)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(912, 34)
         Me.Label15.TabIndex = 29
@@ -147,7 +156,7 @@ Partial Class StudyTopics
         '
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(13, 659)
+        Me.Label16.Location = New System.Drawing.Point(13, 1144)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(173, 17)
         Me.Label16.TabIndex = 28
@@ -156,7 +165,7 @@ Partial Class StudyTopics
         'Label14
         '
         Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(16, 614)
+        Me.Label14.Location = New System.Drawing.Point(16, 1099)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(894, 34)
         Me.Label14.TabIndex = 27
@@ -167,7 +176,7 @@ Partial Class StudyTopics
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(16, 534)
+        Me.Label13.Location = New System.Drawing.Point(16, 1019)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(895, 34)
         Me.Label13.TabIndex = 26
@@ -176,7 +185,7 @@ Partial Class StudyTopics
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(16, 454)
+        Me.Label12.Location = New System.Drawing.Point(16, 943)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(929, 34)
         Me.Label12.TabIndex = 25
@@ -185,18 +194,18 @@ Partial Class StudyTopics
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(16, 392)
+        Me.Label11.Location = New System.Drawing.Point(16, 881)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(851, 17)
+        Me.Label11.Size = New System.Drawing.Size(842, 17)
         Me.Label11.TabIndex = 24
-        Me.Label11.Text = "Significa que la información sea generada y procesada utilizan- do de manera ópti" &
-    "ma los recursos que tiene la empresa para este fin."
+        Me.Label11.Text = "Significa que la información sea generada y procesada utilizando de manera óptima" &
+    " los recursos que tiene la empresa para este fin."
         '
         'Label10
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(13, 362)
+        Me.Label10.Location = New System.Drawing.Point(13, 851)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(96, 17)
         Me.Label10.TabIndex = 23
@@ -206,7 +215,7 @@ Partial Class StudyTopics
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(13, 427)
+        Me.Label9.Location = New System.Drawing.Point(13, 916)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(147, 17)
         Me.Label9.TabIndex = 22
@@ -216,7 +225,7 @@ Partial Class StudyTopics
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(13, 507)
+        Me.Label8.Location = New System.Drawing.Point(13, 992)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(100, 17)
         Me.Label8.TabIndex = 21
@@ -226,7 +235,7 @@ Partial Class StudyTopics
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(13, 585)
+        Me.Label7.Location = New System.Drawing.Point(12, 1071)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(129, 17)
         Me.Label7.TabIndex = 20
@@ -235,7 +244,7 @@ Partial Class StudyTopics
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(13, 307)
+        Me.Label6.Location = New System.Drawing.Point(13, 796)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(911, 34)
         Me.Label6.TabIndex = 19
@@ -244,7 +253,7 @@ Partial Class StudyTopics
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(13, 186)
+        Me.Label5.Location = New System.Drawing.Point(13, 675)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(945, 85)
         Me.Label5.TabIndex = 18
@@ -254,7 +263,7 @@ Partial Class StudyTopics
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(13, 277)
+        Me.Label4.Location = New System.Drawing.Point(13, 766)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(107, 17)
         Me.Label4.TabIndex = 17
@@ -263,7 +272,7 @@ Partial Class StudyTopics
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(13, 134)
+        Me.Label3.Location = New System.Drawing.Point(13, 623)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(927, 34)
         Me.Label3.TabIndex = 16
@@ -328,12 +337,47 @@ Partial Class StudyTopics
         Me.TabPage5.Text = "Ciclos de programación"
         Me.TabPage5.UseVisualStyleBackColor = True
         '
+        'ImageList1
+        '
+        Me.ImageList1.ImageStream = CType(resources.GetObject("ImageList1.ImageStream"), System.Windows.Forms.ImageListStreamer)
+        Me.ImageList1.TransparentColor = System.Drawing.Color.Transparent
+        Me.ImageList1.Images.SetKeyName(0, "data-protection-security-important-information.jpg")
+        '
+        'ButtonEvaluate
+        '
+        Me.ButtonEvaluate.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.ButtonEvaluate.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonEvaluate.Location = New System.Drawing.Point(746, 2159)
+        Me.ButtonEvaluate.Name = "ButtonEvaluate"
+        Me.ButtonEvaluate.Size = New System.Drawing.Size(212, 45)
+        Me.ButtonEvaluate.TabIndex = 34
+        Me.ButtonEvaluate.Text = "Presentar evaluación del tema"
+        Me.ButtonEvaluate.UseVisualStyleBackColor = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.Fase4HenryAdarme.My.Resources.Resources.data_protection_security_important_information
+        Me.PictureBox1.Location = New System.Drawing.Point(16, 137)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(924, 438)
+        Me.PictureBox1.TabIndex = 33
+        Me.PictureBox1.TabStop = False
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.Location = New System.Drawing.Point(13, 1797)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(945, 323)
+        Me.Label19.TabIndex = 35
+        Me.Label19.Text = resources.GetString("Label19.Text")
+        '
         'StudyTopics
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.ClientSize = New System.Drawing.Size(1006, 721)
+        Me.ClientSize = New System.Drawing.Size(1006, 723)
         Me.Controls.Add(Me.TabControl1)
         Me.Name = "StudyTopics"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -342,6 +386,7 @@ Partial Class StudyTopics
         Me.TabPage1.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -372,4 +417,8 @@ Partial Class StudyTopics
     Friend WithEvents Label17 As Label
     Friend WithEvents Label18 As Label
     Friend WithEvents WebBrowser1 As WebBrowser
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents ImageList1 As ImageList
+    Friend WithEvents ButtonEvaluate As Button
+    Friend WithEvents Label19 As Label
 End Class

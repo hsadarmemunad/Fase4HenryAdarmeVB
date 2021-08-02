@@ -117,6 +117,27 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Label19.Text" xml:space="preserve">
+    <value>En seguridad informática, además de las características anteriores, es necesario cuidar ciertos aspectos como el control de acceso y la 
+autenticación, aunque éstos podrían incluirse en la característica de apego a estándares.
+
+La autenticación consiste en verificar, la identidad de un usuario o de una entidad o sitio en la red; por ejemplo, verificar que si se va a realizar
+una transferencia bancaria en realidad se esté ingresando al portal del banco deseado y no a algún otro sitio que trate de suplantar a dicha
+institución bancaria y que autorice ciertas transacciones en forma fraudulenta para su beneficio, A la fecha se han definido dos tipos de
+autenticación: la de origen de datos, esto es conectarse al sitio real que uno desea, y la autenticación de entidad par, lo que garantiza
+el establecimiento del intercambio de datos con la entidad apropiada.
+
+Por otro lado, el no repudio es la capacidad que se le otorga al sistema de evitar que un usuario niegue haber efectuado determinadas acciones, 
+como haber originado ciertos datos, haberlos recibido o haberlos enviado. Por fortuna, hoy en día, la seguridad informática ha diseñado pruebas
+irrefutables para evitar que esto suceda, como generar en forma automática comprobantes de que un usuario realizó cualquiera de las
+actividades mencionadas, mismos que permanecen en la red.
+
+En seguridad informática se agrega una característica más a la información: privacidad, la cual es distinta de la confidencialidad, De acuerdo
+con la “Recomendación UIT-T X. 805" emitida por la International Telecommunication Union, la privacidad está relacionada con la protección de la 
+asociación de la identidad de los usuarios y sus actividades, mientras que la confidencialidad se refiere a la protección contra accesos no
+autorizados al contenido de los datos, tal como lo señala COBIT, lo cual se logra con el cifrado de datos o siguiendo el apego a estándares respecto
+al control de acceso a bases de datos.</value>
+  </data>
   <data name="Label17.Text" xml:space="preserve">
     <value>Significa que la información no haya sido alterada inapropiadamente En seguridad informática, además de las características anteriores, es
 necesario cuidar ciertos aspectos como el control de acceso y la autenticación, aunque éstos podrían incluirse en la característica de apego
@@ -145,5 +166,51 @@ a continuación:</value>
     <value>La seguridad informatica es la disciplina que con base en políticas y normas internas y externas de la empresa, se encarga de proteger
 la integridad y privacidad de la información que se encuentra almacenada en un sistema informático, contra cualquier tipo de amenazas,
 minimie zando los riesgos tanto físicos como lógicos, a los que está expuesta.</value>
+  </data>
+  <metadata name="ImageList1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="ImageList1.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAABU
+        CAAAAk1TRnQBSQFMAwEBAAEYAQABGAEAARABAAEQAQAE/wEJAQAI/wFCAU0BNgEEBgABNgEEAgABKAMA
+        AUADAAEQAwABAQEAAQgGAAEEGAABgAIAAYADAAKAAQABgAMAAYABAAGAAQACgAIAA8ABAAHAAdwBwAEA
+        AfABygGmAQABMwUAATMBAAEzAQABMwEAAjMCAAMWAQADHAEAAyIBAAMpAQADVQEAA00BAANCAQADOQEA
+        AYABfAH/AQACUAH/AQABkwEAAdYBAAH/AewBzAEAAcYB1gHvAQAB1gLnAQABkAGpAa0CAAH/ATMDAAFm
+        AwABmQMAAcwCAAEzAwACMwIAATMBZgIAATMBmQIAATMBzAIAATMB/wIAAWYDAAFmATMCAAJmAgABZgGZ
+        AgABZgHMAgABZgH/AgABmQMAAZkBMwIAAZkBZgIAApkCAAGZAcwCAAGZAf8CAAHMAwABzAEzAgABzAFm
+        AgABzAGZAgACzAIAAcwB/wIAAf8BZgIAAf8BmQIAAf8BzAEAATMB/wIAAf8BAAEzAQABMwEAAWYBAAEz
+        AQABmQEAATMBAAHMAQABMwEAAf8BAAH/ATMCAAMzAQACMwFmAQACMwGZAQACMwHMAQACMwH/AQABMwFm
+        AgABMwFmATMBAAEzAmYBAAEzAWYBmQEAATMBZgHMAQABMwFmAf8BAAEzAZkCAAEzAZkBMwEAATMBmQFm
+        AQABMwKZAQABMwGZAcwBAAEzAZkB/wEAATMBzAIAATMBzAEzAQABMwHMAWYBAAEzAcwBmQEAATMCzAEA
+        ATMBzAH/AQABMwH/ATMBAAEzAf8BZgEAATMB/wGZAQABMwH/AcwBAAEzAv8BAAFmAwABZgEAATMBAAFm
+        AQABZgEAAWYBAAGZAQABZgEAAcwBAAFmAQAB/wEAAWYBMwIAAWYCMwEAAWYBMwFmAQABZgEzAZkBAAFm
+        ATMBzAEAAWYBMwH/AQACZgIAAmYBMwEAA2YBAAJmAZkBAAJmAcwBAAFmAZkCAAFmAZkBMwEAAWYBmQFm
+        AQABZgKZAQABZgGZAcwBAAFmAZkB/wEAAWYBzAIAAWYBzAEzAQABZgHMAZkBAAFmAswBAAFmAcwB/wEA
+        AWYB/wIAAWYB/wEzAQABZgH/AZkBAAFmAf8BzAEAAcwBAAH/AQAB/wEAAcwBAAKZAgABmQEzAZkBAAGZ
+        AQABmQEAAZkBAAHMAQABmQMAAZkCMwEAAZkBAAFmAQABmQEzAcwBAAGZAQAB/wEAAZkBZgIAAZkBZgEz
+        AQABmQEzAWYBAAGZAWYBmQEAAZkBZgHMAQABmQEzAf8BAAKZATMBAAKZAWYBAAOZAQACmQHMAQACmQH/
+        AQABmQHMAgABmQHMATMBAAFmAcwBZgEAAZkBzAGZAQABmQLMAQABmQHMAf8BAAGZAf8CAAGZAf8BMwEA
+        AZkBzAFmAQABmQH/AZkBAAGZAf8BzAEAAZkC/wEAAcwDAAGZAQABMwEAAcwBAAFmAQABzAEAAZkBAAHM
+        AQABzAEAAZkBMwIAAcwCMwEAAcwBMwFmAQABzAEzAZkBAAHMATMBzAEAAcwBMwH/AQABzAFmAgABzAFm
+        ATMBAAGZAmYBAAHMAWYBmQEAAcwBZgHMAQABmQFmAf8BAAHMAZkCAAHMAZkBMwEAAcwBmQFmAQABzAKZ
+        AQABzAGZAcwBAAHMAZkB/wEAAswCAALMATMBAALMAWYBAALMAZkBAAPMAQACzAH/AQABzAH/AgABzAH/
+        ATMBAAGZAf8BZgEAAcwB/wGZAQABzAH/AcwBAAHMAv8BAAHMAQABMwEAAf8BAAFmAQAB/wEAAZkBAAHM
+        ATMCAAH/AjMBAAH/ATMBZgEAAf8BMwGZAQAB/wEzAcwBAAH/ATMB/wEAAf8BZgIAAf8BZgEzAQABzAJm
+        AQAB/wFmAZkBAAH/AWYBzAEAAcwBZgH/AQAB/wGZAgAB/wGZATMBAAH/AZkBZgEAAf8CmQEAAf8BmQHM
+        AQAB/wGZAf8BAAH/AcwCAAH/AcwBMwEAAf8BzAFmAQAB/wHMAZkBAAH/AswBAAH/AcwB/wEAAv8BMwEA
+        AcwB/wFmAQAC/wGZAQAC/wHMAQACZgH/AQABZgH/AWYBAAFmAv8BAAH/AmYBAAH/AWYB/wEAAv8BZgEA
+        ASEBAAGlAQADXwEAA3cBAAOGAQADlgEAA8sBAAOyAQAD1wEAA90BAAPjAQAD6gEAA/EBAAP4AQAB8AH7
+        Af8BAAGkAqABAAOAAwAB/wIAAf8DAAL/AQAB/wMAAf8BAAH/AQAC/wIAA/8BAAHaAdkB0wGsAYoBrQG0
+        AdsB3AGLA2UDCjAAAdoC0wGsAYoBrQLbAeEBiwNlAwowAAHaAdMBsgGsAYoBrQG0AYsB4QGLA2UDCjAA
+        AtMDrAKzAWYB4QGtAaYCZQFmAQ0BCjAAAdMBsgOsAbQBkAFmAeEBswGKAaYBZQGLAQ0BCjAAA6wBswGs
+        AboBtAFmAbsB3AGzAYoCZQIKMAACrAGzAbQC2wGzARIBugHhAdsBrAGmAWUBZgEKMAABigGmAawC2wHU
+        AZAB6gG6AeEB2wGzAaYBZQGLAQ0wAAKmAYsCswHUAbMB6wG6AdoB0wGzAYsCZQEKMAACZQKmAa0BswHa
+        AbMB2gHUAbIBswGLAWUCCjAAAmUBZgGGAYsCswHUAdMBsgGsAdwBiwFlAgowAAENAQoBZQFmAYYBigGs
+        AbMBrAKKAbMBiwMKMAACCgFlAYsCZQGmAbMBpgNlAQ0DCjAAAgoBDQIKBmUFCjAAEAowABAKMAABQgFN
+        AT4HAAE+AwABKAMAAUADAAEQAwABAQEAAQEFAAGAFwAD/4EACw==
+</value>
   </data>
 </root>
